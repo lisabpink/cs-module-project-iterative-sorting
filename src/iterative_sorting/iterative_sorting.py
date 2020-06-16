@@ -37,6 +37,13 @@ showed up, we can construct a sorted set of the input data from the
 buckets. 
 
 What is the time and space complexity of the counting sort algorithm?
+
+The space-time complexity of counting sort really amounts to a combination
+of both the number of elements to be sorted, n, and the range between the 
+largest and smallest element, or k. The true Big O notation of counting sort is O(n + k).
+
+Why is counting sort not used?
+Thus space complexity becomes O(k). Hence for a very large range of numbers, counting sort requires a very large array. This reduces its memory efficiency and increase space consumption. Hence its not a good choice for sorting a large range of numbers.
 '''
 
 
