@@ -7,10 +7,13 @@ def selection_sort(arr):
         # TO-DO: find next smallest element
         # (hint, can do in 3 loc)
         # Your code here
-
+        for x in range(cur_index + 1, len(arr)):
+            if arr[x] < arr[smallest_index]:
+                smallest_index = x
 
         # TO-DO: swap
         # Your code here
+        arr[smallest_index], arr[cur_index] = arr[cur_index], arr[smallest_index]
 
     return arr
 
@@ -18,9 +21,30 @@ def selection_sort(arr):
 # TO-DO:  implement the Bubble Sort function below
 def bubble_sort(arr):
     # Your code here
+    # Keep track of pass number to not check the elements that have already bubbled up
+    pass_num = 1
 
+    # Use while true loop to repeat logic
+    while pass_num < len(arr):
+        did_swap = False
+
+        # Loop through elements minus pass number
+        for i in range(len(arr) - pass_num):
+            # if next element is >
+            if arr[i] > arr[i + 1]:
+                # swap
+                arr[i], arr[i + 1] = arr[i + 1], arr[i]
+                # at least one swap
+                did_swap = True
+         # If we didn't do any swaps, the array is ordered
+        if not did_swap:
+            # exit early-already sorted
+            break
+
+        pass_num += 1
 
     return arr
+
 
 '''
 STRETCH: implement the Count Sort function below
@@ -38,9 +62,17 @@ showed up, we can construct a sorted set of the input data from the
 buckets. 
 
 What is the time and space complexity of the counting sort algorithm?
+
+The space-time complexity of counting sort really amounts to a combination
+of both the number of elements to be sorted, n, and the range between the 
+largest and smallest element, or k. The true Big O notation of counting sort is O(n + k).
+
+Why is counting sort not used?
+Thus space complexity becomes O(k). Hence for a very large range of numbers, counting sort requires a very large array. This reduces its memory efficiency and increase space consumption. Hence its not a good choice for sorting a large range of numbers.
 '''
+
+
 def counting_sort(arr, maximum=None):
     # Your code here
-
 
     return arr

@@ -1,0 +1,8 @@
+	# Print the value of every node, starting with the given node,
+    # in an iterative depth first traversal
+    def dft_print(self, node):
+        # use a stack
+        # start your stack with the root node
+
+        # while loop that checks stack size
+            # pointer

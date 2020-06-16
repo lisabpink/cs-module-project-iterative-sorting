@@ -1,0 +1,14 @@
+	# Print the value of every node, starting with the given node,
+    # in an iterative breadth first traversal
+    def bft_print(self, node):
+        # use a queue
+        # start queue with root node
+
+
+
+
+        # while loop that checks
+        # size of queue
+            # pointer variable
+            # that updates at the
+            # beginning of each loop

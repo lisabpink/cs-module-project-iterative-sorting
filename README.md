@@ -7,7 +7,15 @@
 ## Objectives
 
 - describe the differences between Linear and Binary Search algorithms
+
+  ## LINEAR SEARCH O(n) - sequential- going through an array one element at a time. Start with the beginning, the first index, if equal- stop, if not keep going, increment until item is found
+
+  ## BINARY SEARCH O(log n) - least number of steps. Start at the middle index. Length of array divided by two. Greater than- go to list/side with smaller values and start from the middle of that, etc.
+
 - define what runtime complexity is, differentiate between various classifications and categorize the performance of an algorithm using Big O notation
+
+  ## Time complexity is a concept in computer science that deals with the quantification of the amount of time taken by a set of code or algorithm to process or run as a function of the amount of input. In other words, time complexity is essentially efficiency, or how long a program function takes to process a given input.
+
 - distinguish when to use, classify the performance, and implement code to conduct classic iterative sorting algorithms
 
 ## Introduction
@@ -159,7 +167,7 @@ So the total space complexity for this algorithm is:
 Again, compare to the `O(1)` space complexity of the initial iterative solution.
 
 In some languages, notably
-[Lisp](https://en.wikipedia.org/wiki/Lisp_(programming_language)) and other
+[Lisp](<https://en.wikipedia.org/wiki/Lisp_(programming_language)>) and other
 [functional programming
 languages](https://en.wikipedia.org/wiki/Functional_programming), you can write
 recursive solutions with `O(1)` space complexity. These languages take advantage
